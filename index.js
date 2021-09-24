@@ -38,4 +38,3 @@ while (participantes < 100) {
 	dataAtual = readlineSync.question("Digite a data atual: ");
 	participantes++;
 }
-console.log("Limite de cadastros atingido!");
