@@ -1,8 +1,31 @@
-let listaDeEstudantes = ["Lucas", "Igor", "Guilherme", "Eduardo", "Jhonny"];
-let quantidadeDeEstudantes = listaDeEstudantes.length;
-if (quantidadeDeEstudantes < 5) {
-	listaDeEstudantes.push("Welinton");
-	console.log(listaDeEstudantes);
-} else {
-	console.log("O número de alunos desta turma atingiu o limite!");
+let readlineSync = require('readline-sync');
+var nome;
+var dataDoEvento;
+var idade;
+var dataAtual;
+var participantes = 50;
+
+nome = readlineSync.question("Digite seu nome: ");
+dataDoEvento = readlineSync.question("Digite a data do evento: ");
+idade = readlineSync.question("Digite sua idade: ");
+dataAtual = readlineSync.question("Digite a data atual: ");
+
+if(dataDoEvento > dataAtual){
+	//condição verdadeira
+	if(idade > 18){
+		//condição verdadeira
+		if(participantes < 100){
+			//condição verdadeira
+			console.log("Participante cadastrado com sucesso!");
+		}else{
+			//condição falsa
+			console.log("Cadastro não permitido, lista de participantes excedida!");
+		}
+	}else{
+		//condição falsa
+		console.log("Cadastro não permitido, idade inválida!");
+	}
+}else{
+	//condição falsa
+	console.log("Cadastro não permitido, data inválida!");
 }
