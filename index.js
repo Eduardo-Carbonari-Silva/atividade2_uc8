@@ -10,7 +10,7 @@ dataDoEvento = readlineSync.question("Digite a data do evento: ");
 idade = readlineSync.question("Digite sua idade: ");
 dataAtual = readlineSync.question("Digite a data atual: ");
 
-while (participantes < 100) {
+while (participantes < 100){
 
 	if(dataDoEvento > dataAtual){
 		//condição verdadeira
