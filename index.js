@@ -38,3 +38,5 @@ while (participantes < 100){
 	dataAtual = readlineSync.question("Digite a data atual: ");
 	participantes++;
 }
+
+console.log("Cadastro não permitido, lista de participantes excedida!");
