@@ -3,14 +3,14 @@ var nome;
 var dataDoEvento;
 var idade;
 var dataAtual;
-var participantes = 0;
+var participantes;
 
 nome = readlineSync.question("Digite seu nome: ");
 dataDoEvento = readlineSync.question("Digite a data do evento: ");
 idade = readlineSync.question("Digite sua idade: ");
 dataAtual = readlineSync.question("Digite a data atual: ");
 
-while (participantes < 100){
+for(var participantes = 0; participantes < 100; participantes++){
 
 	if(dataDoEvento > dataAtual){
 		//condição verdadeira
@@ -36,7 +36,7 @@ while (participantes < 100){
 	dataDoEvento = readlineSync.question("Digite a data do evento: ");
 	idade = readlineSync.question("Digite sua idade: ");
 	dataAtual = readlineSync.question("Digite a data atual: ");
-	participantes++;
+
 }
 
 console.log("Cadastro não permitido, lista de participantes excedida!");
