@@ -10,7 +10,7 @@ dataDoEvento = readlineSync.question("Digite a data do evento: ");
 idade = readlineSync.question("Digite sua idade: ");
 dataAtual = readlineSync.question("Digite a data atual: ");
 
-for(var participantes = 0; participantes < 100; participantes++){
+for(var participantes = 0; participantes < 100; participantes++) {
 
 	if(dataDoEvento > dataAtual){
 		//condição verdadeira
